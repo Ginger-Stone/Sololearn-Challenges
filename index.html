@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/script.js"></script>
+    <title>Password Validator</title>
+  </head>
+  <body>
+    <h1>Password Validator</h1>
+    <p>
+      <h3>Password Rules</h3>
+      <li>Minimum length is 5</li>
+      <li>Maximum length is 10</li>
+      <li>Should contain atleast one number</li>
+      <li>Should contain atleast one special character</li>
+      <li>Should not contain spaces</li>
+    </p>
+
+    <input
+      type="password"
+      id="password"
+      placeholder="Enter Password" 
+      onkeydown="checkKey(event)"     
+      
+    />
+     <!-- <button onclick="validate()">Check</button> -->
+        <div id="password-check">   
+    </div>
+  </body>
+</html>
